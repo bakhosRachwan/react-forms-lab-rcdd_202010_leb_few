@@ -9,6 +9,9 @@ class LoginForm extends React.Component {
       password: this.props.password
     };
   }
+  handleLogin = (event) => {
+    event.preventDefault()
+  }
 
   render() {
     return (
