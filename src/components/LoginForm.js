@@ -1,12 +1,12 @@
 import React from "react";
 
 class LoginForm extends React.Component {
-  constructor() {
+  constructor(props) {
     super();
 
     this.state = {
-      username: 'fe',
-      password: 'ds'
+      username: this.props.username,
+      password: this.props.password
     };
   }
 
